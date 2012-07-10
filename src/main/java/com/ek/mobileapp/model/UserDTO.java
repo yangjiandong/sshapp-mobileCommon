@@ -1,5 +1,6 @@
 package com.ek.mobileapp.model;
 
+
 //model
 public class UserDTO {
     private Long id;
@@ -10,11 +11,19 @@ public class UserDTO {
     private String email;
     private Integer version;
     private String dbCodes;
-
-    //密码状态,0必须修改1已修改
     private String updatePwd;
+    private String telNumber;
+    private String mobileNo;
 
-    private String roles;
+    //授权模块
+    private String mobmodules;
+
+    //his信息
+    private String userNo;
+    private String departNo;
+    private String departName;
+    private String title;
+    private String job;
 
     public Long getId() {
         return id;
@@ -93,19 +102,69 @@ public class UserDTO {
         this.updatePwd = updatePwd;
     }
 
-    public String getRoles() {
-        return roles;
+    public String getTelNumber() {
+        return telNumber;
     }
 
-    public void setRoles(String roles) {
-        this.roles = roles;
+    public void setTelNumber(String telNumber) {
+        this.telNumber = telNumber;
     }
 
-    //public List<RoleDTO> getRoleList() {
-    //    return roleList;
-    //}
+    public String getMobileNo() {
+        return mobileNo;
+    }
 
-    //public void setRoleList(List<RoleDTO> roleList) {
-    //    this.roleList = roleList;
-    //}
+    public void setMobileNo(String mobileNo) {
+        this.mobileNo = mobileNo;
+    }
+
+    public String getUserNo() {
+        return userNo;
+    }
+
+    public void setUserNo(String userNo) {
+        this.userNo = userNo;
+    }
+
+    public String getDepartNo() {
+        return departNo;
+    }
+
+    public void setDepartNo(String departNo) {
+        this.departNo = departNo;
+    }
+
+    public String getDepartName() {
+        return departName;
+    }
+
+    public void setDepartName(String departName) {
+        this.departName = departName;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getJob() {
+        return job;
+    }
+
+    public void setJob(String job) {
+        this.job = job;
+    }
+
+    public String getMobmodules() {
+        return mobmodules;
+    }
+
+    public void setMobmodules(String mobmodules) {
+        this.mobmodules = mobmodules;
+    }
+
+
 }
