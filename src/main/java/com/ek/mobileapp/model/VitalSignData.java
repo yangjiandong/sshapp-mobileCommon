@@ -3,6 +3,7 @@ package com.ek.mobileapp.model;
 public class VitalSignData {
 
     private Long id;
+    private Long userId;
     private String patientId;//住院号
     private String visitId;//就诊次数
     private String addDate;//保存日期
@@ -118,6 +119,14 @@ public class VitalSignData {
 
     public void setState(String state) {
         this.state = state;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 
 }

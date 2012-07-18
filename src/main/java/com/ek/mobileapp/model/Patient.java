@@ -3,6 +3,7 @@ package com.ek.mobileapp.model;
 public class Patient {
 
     private Long id;
+    private Long userId;
     private String patientId;//住院号
     private String patientName;//病人姓名
     private String sex;//性别
@@ -73,6 +74,14 @@ public class Patient {
 
     public void setDoctorName(String doctorName) {
         this.doctorName = doctorName;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 
 }
