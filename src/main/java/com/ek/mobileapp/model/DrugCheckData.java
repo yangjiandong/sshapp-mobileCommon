@@ -3,10 +3,10 @@ package com.ek.mobileapp.model;
 //用药核对
 public class DrugCheckData {
 
-    private static final long serialVersionUID = -5267849046070029169L;
     private Long id;
     private Long userId;
     private String patientId;
+    private String visitId;
     private String orderId;
     private String orderNo;
     private String orderSubNo;
@@ -84,6 +84,14 @@ public class DrugCheckData {
 
     public void setUseTime(String useTime) {
         this.useTime = useTime;
+    }
+
+    public String getVisitId() {
+        return visitId;
+    }
+
+    public void setVisitId(String visitId) {
+        this.visitId = visitId;
     }
 
 }
